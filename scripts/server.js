@@ -1,4 +1,4 @@
-fetch('http://127.0.0.1:8000/get/',{
+fetch('https://558bf9d2-8c15-400c-81af-0d7d93356735-00-1skip0tdjrou7.sisko.replit.dev/get',{
     method:"GET",
     headers:{
         "Content-type":"application/json"
