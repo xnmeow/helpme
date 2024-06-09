@@ -5,6 +5,7 @@ fetch('https://558bf9d2-8c15-400c-81af-0d7d93356735-00-1skip0tdjrou7.sisko.repli
     }
 }).then(r=>r.json())
 .then(data=>{
+    document.querySelector(".portfolio").innerHTML =""
     data.items.forEach(item => {
         document.querySelector(".portfolio").innerHTML +=`
         <div class="portfolio__item">
