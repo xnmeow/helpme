@@ -470,3 +470,30 @@ header .logo{
     bottom: 5%;
     right: -11%;
 }
+.loading{
+    height: 50vh;
+    display: block;
+    width: 100%;
+}
+.loading__circle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: 10px solid #232323;
+    border-top: 10px solid transparent;
+    animation: rotate 2s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes rotate {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
